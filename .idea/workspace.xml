@@ -13,14 +13,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7080ff30-f4dc-4f89-a7df-5629d579afab" name="Default Changelist" comment="处理安卓10问题">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+    <list default="true" id="7080ff30-f4dc-4f89-a7df-5629d579afab" name="Default Changelist" comment="限制视频录制10秒，限制相册选择视频只展示10秒以内的，限制只允许使用系统相机">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/java/com/leeson/image_pickers/activitys/SelectPicsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/leeson/image_pickers/activitys/SelectPicsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image_pickers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/image_pickers.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603796236146</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="限制视频录制10秒，限制相册选择视频只展示10秒以内的，限制只允许使用系统相机">
+      <created>1621908107360</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1621908107360</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -438,13 +440,18 @@
     <MESSAGE value="处理ios上架问题" />
     <MESSAGE value="ios打包问题，更新图片选择的框架" />
     <MESSAGE value="处理安卓10问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="处理安卓10问题" />
+    <MESSAGE value="限制视频录制10秒，限制相册选择视频只展示10秒以内的，限制只允许使用系统相机" />
+    <option name="LAST_COMMIT_MESSAGE" value="限制视频录制10秒，限制相册选择视频只展示10秒以内的，限制只允许使用系统相机" />
   </component>
   <component name="WindowStateProjectService">
     <state x="356" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621905673092">
       <screen x="0" y="23" width="1792" height="991" />
     </state>
     <state x="356" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.991@0.23.1792.991" timestamp="1621905673092" />
+    <state x="431" y="23" width="930" height="991" key="CommitChangelistDialog2" timestamp="1621908792447">
+      <screen x="0" y="23" width="1792" height="991" />
+    </state>
+    <state x="431" y="23" width="930" height="991" key="CommitChangelistDialog2/0.23.1792.991@0.23.1792.991" timestamp="1621908792447" />
     <state width="1740" height="322" key="GridCell.Tab.0.bottom" timestamp="1621907337384">
       <screen x="0" y="23" width="1792" height="991" />
     </state>

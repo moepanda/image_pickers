@@ -125,6 +125,7 @@ public class SelectPicsActivity extends BaseActivity {
             }else{
                 pictureSelectionModel.imageFormat(PictureMimeType.MIME_TYPE_VIDEO);
                 pictureSelectionModel.videoMaxSecond(10);
+                pictureSelectionModel.recordVideoSecond(10);
             }
         }
 
