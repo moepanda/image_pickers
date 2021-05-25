@@ -9,17 +9,18 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7080ff30-f4dc-4f89-a7df-5629d579afab" name="Default Changelist" comment="处理安卓10问题">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/java/com/leeson/image_pickers/activitys/SelectPicsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/leeson/image_pickers/activitys/SelectPicsActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_pickers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/image_pickers.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +30,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="image_pickers" />
-  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[6748ca2c9804]" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -49,15 +48,17 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/example/android" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -390,9 +391,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -411,6 +410,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -441,69 +441,33 @@
     <option name="LAST_COMMIT_MESSAGE" value="处理安卓10问题" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="548" y="256" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602221805787">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="356" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621905673092">
+      <screen x="0" y="23" width="1792" height="991" />
     </state>
-    <state x="548" y="256" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602221805787" />
-    <state x="455" y="16" key="CommitChangelistDialog2" timestamp="1603796235063">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="356" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.991@0.23.1792.991" timestamp="1621905673092" />
+    <state width="1740" height="322" key="GridCell.Tab.0.bottom" timestamp="1621907337384">
+      <screen x="0" y="23" width="1792" height="991" />
     </state>
-    <state x="455" y="16" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1603796235063" />
-    <state x="228" y="116" width="1437" height="800" key="DiffContextDialog" timestamp="1603796220629">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1740" height="322" key="GridCell.Tab.0.bottom/0.23.1792.991@0.23.1792.991" timestamp="1621907337384" />
+    <state width="1740" height="322" key="GridCell.Tab.0.center" timestamp="1621907337383">
+      <screen x="0" y="23" width="1792" height="991" />
     </state>
-    <state x="228" y="116" width="1437" height="800" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603796220629" />
-    <state x="572" y="283" key="FileChooserDialogImpl" timestamp="1604037610212">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1740" height="322" key="GridCell.Tab.0.center/0.23.1792.991@0.23.1792.991" timestamp="1621907337383" />
+    <state width="1740" height="322" key="GridCell.Tab.0.left" timestamp="1621907337383">
+      <screen x="0" y="23" width="1792" height="991" />
     </state>
-    <state x="572" y="283" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604037610212" />
-    <state width="1622" height="135" key="GridCell.Tab.0.bottom" timestamp="1603445616588">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1740" height="322" key="GridCell.Tab.0.left/0.23.1792.991@0.23.1792.991" timestamp="1621907337383" />
+    <state width="1740" height="322" key="GridCell.Tab.0.right" timestamp="1621907337383">
+      <screen x="0" y="23" width="1792" height="991" />
     </state>
-    <state width="1622" height="135" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603445616588" />
-    <state width="1622" height="135" key="GridCell.Tab.0.center" timestamp="1603445616588">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1740" height="322" key="GridCell.Tab.0.right/0.23.1792.991@0.23.1792.991" timestamp="1621907337383" />
+    <state x="288" y="70" key="SettingsEditor" timestamp="1621905670813">
+      <screen x="0" y="23" width="1792" height="991" />
     </state>
-    <state width="1622" height="135" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603445616588" />
-    <state width="1622" height="135" key="GridCell.Tab.0.left" timestamp="1603445616588">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="288" y="70" key="SettingsEditor/0.23.1792.991@0.23.1792.991" timestamp="1621905670813" />
+    <state x="527" y="231" width="738" height="574" key="find.popup" timestamp="1621907928069">
+      <screen x="0" y="23" width="1792" height="991" />
     </state>
-    <state width="1622" height="135" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603445616588" />
-    <state width="1622" height="135" key="GridCell.Tab.0.right" timestamp="1603445616588">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1622" height="135" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603445616588" />
-    <state x="127" y="71" key="MergeDialog" timestamp="1603672010772">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="127" y="71" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603672010772" />
-    <state x="603" y="211" key="MultipleFileMergeDialog" timestamp="1603795675666">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="603" y="211" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603795675666" />
-    <state x="410" y="239" key="Vcs.Push.Dialog.v2" timestamp="1603796264225">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="410" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603796264225" />
-    <state x="63" y="161" width="1384" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603795771668">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="63" y="161" width="1384" height="800" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603795771668" />
-    <state x="693" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604044775946">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="693" y="417" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604044775946" />
-    <state x="739" y="237" width="667" height="566" key="find.popup" timestamp="1603703091504">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="739" y="237" width="667" height="566" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603703091504" />
-    <state width="642" height="205" key="javadoc.popup.new" timestamp="1602848486503">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="642" height="205" key="javadoc.popup.new/0.0.1920.1040@0.0.1920.1040" timestamp="1602848486503" />
-    <state x="551" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1603703077892">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="551" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1603703077892" />
+    <state x="527" y="231" width="738" height="574" key="find.popup/0.23.1792.991@0.23.1792.991" timestamp="1621907928069" />
   </component>
 </project>

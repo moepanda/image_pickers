@@ -110,6 +110,7 @@ public class SelectPicsActivity extends BaseActivity {
             } else {
                 pictureSelectionModel = pictureSelector.openCamera(PictureMimeType.ofVideo());
                 pictureSelectionModel.imageFormat(PictureMimeType.MIME_TYPE_VIDEO);
+                pictureSelectionModel.recordVideoSecond(10);
             }
         }else{
             //从相册中选择
@@ -123,6 +124,7 @@ public class SelectPicsActivity extends BaseActivity {
 
             }else{
                 pictureSelectionModel.imageFormat(PictureMimeType.MIME_TYPE_VIDEO);
+                pictureSelectionModel.videoMaxSecond(10);
             }
         }
 
@@ -150,7 +152,7 @@ public class SelectPicsActivity extends BaseActivity {
                 .isSingleDirectReturn(true)// 单选模式下是否直接返回
                 .previewImage(true)// 是否可预览图片 true or false
                 .enableCrop(enableCrop)// 是否裁剪 true or false
-
+                .isUseCustomCamera(false)
                 .circleDimmedLayer(false)
                 .showCropFrame(true)
                 .showCropGrid(true)
