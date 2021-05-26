@@ -16,6 +16,7 @@ import com.leeson.image_pickers.utils.GlideEngine;
 import com.leeson.image_pickers.utils.PictureStyleUtil;
 import com.luck.picture.lib.PictureSelectionModel;
 import com.luck.picture.lib.PictureSelector;
+import com.luck.picture.lib.camera.CustomCameraView;
 import com.luck.picture.lib.config.PictureConfig;
 import com.luck.picture.lib.config.PictureMimeType;
 import com.luck.picture.lib.entity.LocalMedia;
@@ -102,6 +103,7 @@ public class SelectPicsActivity extends BaseActivity {
             //直接调用拍照或拍视频时
             if ("photo".equals(mimeType)) {
                 pictureSelectionModel = pictureSelector.openCamera(PictureMimeType.ofImage());
+                pictureSelectionModel.setButtonFeatures(CustomCameraView.BUTTON_STATE_ONLY_CAPTURE);
                 if (SdkVersionUtils.checkedAndroid_Q()){
                     pictureSelectionModel.imageFormat(PictureMimeType.PNG_Q);
                 }else{
@@ -109,22 +111,25 @@ public class SelectPicsActivity extends BaseActivity {
                 }
             } else {
                 pictureSelectionModel = pictureSelector.openCamera(PictureMimeType.ofVideo());
+                pictureSelectionModel.setButtonFeatures(CustomCameraView.BUTTON_STATE_ONLY_RECORDER);
                 pictureSelectionModel.imageFormat(PictureMimeType.MIME_TYPE_VIDEO);
                 pictureSelectionModel.recordVideoSecond(10);
             }
         }else{
             //从相册中选择
-            pictureSelectionModel = pictureSelector.openGallery("image".equals(mode) ? PictureMimeType.ofImage() : PictureMimeType.ofVideo());
             if ("image".equals(mode)){
+                pictureSelectionModel = pictureSelector.openGallery(PictureMimeType.ofImage());
+                pictureSelectionModel.setButtonFeatures(CustomCameraView.BUTTON_STATE_ONLY_CAPTURE);
                 if (SdkVersionUtils.checkedAndroid_Q()){
                     pictureSelectionModel.imageFormat(PictureMimeType.PNG_Q);
                 }else{
                     pictureSelectionModel.imageFormat(PictureMimeType.PNG);
                 }
-
             }else{
+                pictureSelectionModel = pictureSelector.openGallery(PictureMimeType.ofVideo());
+                pictureSelectionModel.setButtonFeatures(CustomCameraView.BUTTON_STATE_ONLY_RECORDER);
                 pictureSelectionModel.imageFormat(PictureMimeType.MIME_TYPE_VIDEO);
-                pictureSelectionModel.videoMaxSecond(10);
+//                pictureSelectionModel.videoMaxSecond(10);//相册展示的视频最大时长
                 pictureSelectionModel.recordVideoSecond(10);
             }
         }
@@ -153,7 +158,8 @@ public class SelectPicsActivity extends BaseActivity {
                 .isSingleDirectReturn(true)// 单选模式下是否直接返回
                 .previewImage(true)// 是否可预览图片 true or false
                 .enableCrop(enableCrop)// 是否裁剪 true or false
-                .isUseCustomCamera(false)
+                .isUseCustomCamera(true)
+                .isWeChatStyle(true)
                 .circleDimmedLayer(false)
                 .showCropFrame(true)
                 .showCropGrid(true)
@@ -217,10 +223,9 @@ public class SelectPicsActivity extends BaseActivity {
                                 }
                             }
                         } else {
-
                             if (Build.VERSION.SDK_INT >= 29) {
                                 //图片选择库 2.5.9 有bug，要这样处理
-                                String AndroidQToPath = AndroidQTransformUtils.copyPathToAndroidQ(SelectPicsActivity.this,
+                                String AndroidQToPath = AndroidQTransformUtils.copyPathToAndroidQ(SelectPicsActivity.this,System.currentTimeMillis(),
                                         localMedia.getPath(), localMedia.getWidth(), localMedia.getHeight(), localMedia.getMimeType(), localMedia.getRealPath().substring(localMedia.getRealPath().lastIndexOf("/")+1));
                                 localMedia.setAndroidQToPath(AndroidQToPath);
 

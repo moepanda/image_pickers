@@ -407,7 +407,7 @@ public class Saver {
                             }
                         }
                     });
-                }catch (Exception e){
+                }catch (final Exception e){
                     e.printStackTrace();
                     new Handler(context.getMainLooper()).post(new Runnable() {
                         @Override
