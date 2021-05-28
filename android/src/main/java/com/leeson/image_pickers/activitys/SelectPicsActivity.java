@@ -109,11 +109,14 @@ public class SelectPicsActivity extends BaseActivity {
                 }else{
                     pictureSelectionModel.imageFormat(PictureMimeType.PNG);
                 }
+                //安卓端自定义相机拍照有问题，暂时不用了，等原项目修复bug
+                pictureSelectionModel.isUseCustomCamera(false);
             } else {
                 pictureSelectionModel = pictureSelector.openCamera(PictureMimeType.ofVideo());
                 pictureSelectionModel.setButtonFeatures(CustomCameraView.BUTTON_STATE_ONLY_RECORDER);
                 pictureSelectionModel.imageFormat(PictureMimeType.MIME_TYPE_VIDEO);
                 pictureSelectionModel.recordVideoSecond(10);
+                pictureSelectionModel.isUseCustomCamera(true);
             }
         }else{
             //从相册中选择
@@ -125,12 +128,14 @@ public class SelectPicsActivity extends BaseActivity {
                 }else{
                     pictureSelectionModel.imageFormat(PictureMimeType.PNG);
                 }
+                pictureSelectionModel.isUseCustomCamera(true);
             }else{
                 pictureSelectionModel = pictureSelector.openGallery(PictureMimeType.ofVideo());
                 pictureSelectionModel.setButtonFeatures(CustomCameraView.BUTTON_STATE_ONLY_RECORDER);
                 pictureSelectionModel.imageFormat(PictureMimeType.MIME_TYPE_VIDEO);
 //                pictureSelectionModel.videoMaxSecond(10);//相册展示的视频最大时长
                 pictureSelectionModel.recordVideoSecond(10);
+                pictureSelectionModel.isUseCustomCamera(true);
             }
         }
 
@@ -158,7 +163,6 @@ public class SelectPicsActivity extends BaseActivity {
                 .isSingleDirectReturn(true)// 单选模式下是否直接返回
                 .previewImage(true)// 是否可预览图片 true or false
                 .enableCrop(enableCrop)// 是否裁剪 true or false
-                .isUseCustomCamera(true)
                 .isWeChatStyle(true)
                 .circleDimmedLayer(false)
                 .showCropFrame(true)
