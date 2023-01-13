@@ -21,7 +21,7 @@ image pickers support multi-selection of local pictures, multi-selection of loca
 
 ```yaml
 # add this line to your dependencies
-image_pickers: ^1.0.8+7
+image_pickers: ^1.1.0+8
 ```
 
 ```dart
@@ -110,16 +110,16 @@ ImagePickers.saveVideoToGallery("http://xxxx/xx/xx.mp4");
 Add the following entry to your `Info.plist` file, located in `/Info.plist` :
 `
 <key>NSAppTransportSecurity</key>
-    <dict>
-        <key>NSAllowsArbitraryLoads</key>
-        <true/>
-    </dict>
-    <key>NSMicrophoneUsageDescription</key>
-    <string>...</string>
-    <key>NSPhotoLibraryAddUsageDescription</key>
-    <string>...</string>
-    <key>NSCameraUsageDescription</key>
-    <string>...</string>
-    <key>NSPhotoLibraryUsageDescription</key>
-    <string>...</string>
+<dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+</dict>
+<key>NSMicrophoneUsageDescription</key>
+<string>...</string>
+<key>NSPhotoLibraryAddUsageDescription</key>
+<string>...</string>
+<key>NSCameraUsageDescription</key>
+<string>...</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>...</string>
 `
