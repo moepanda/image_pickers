@@ -148,8 +148,7 @@ class ImagePickers {
       'height': height,
       'compressSize': compressSize < 50 ? 50 : compressSize,
     };
-    final List<dynamic> paths =
-        await (_channel.invokeMethod('getPickerPaths', params) as FutureOr<List<dynamic>>);
+    final List<dynamic> paths = await _channel.invokeMethod('getPickerPaths', params);
     List<Media> medias = [];
     paths.forEach((data) {
       Media media = Media();

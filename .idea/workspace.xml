@@ -31,10 +31,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7080ff30-f4dc-4f89-a7df-5629d579afab" name="Default Changelist" comment="修改支持的flutter版本">
+    <list default="true" id="7080ff30-f4dc-4f89-a7df-5629d579afab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/image_pickers.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/image_pickers.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -431,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673578560106</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="真~升级到空安全-_-||">
+      <created>1673580078777</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1673580078777</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -474,7 +479,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/example/ios/.symlinks/plugins/image_pickers" />
     </ignored-roots>
-    <MESSAGE value="视频保存" />
     <MESSAGE value="修复安卓9无法加载图片问题" />
     <MESSAGE value="ui颜色" />
     <MESSAGE value="拍照，录制视频" />
@@ -499,6 +503,7 @@
     <MESSAGE value="安卓引入微信样式" />
     <MESSAGE value="支持空安全" />
     <MESSAGE value="修改支持的flutter版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改支持的flutter版本" />
+    <MESSAGE value="真~升级到空安全-_-||" />
+    <option name="LAST_COMMIT_MESSAGE" value="真~升级到空安全-_-||" />
   </component>
 </project>
